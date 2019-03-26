@@ -15,6 +15,7 @@ namespace sistema
 		public formMenu()
 		{
 			InitializeComponent();
+			sistema.FormLogin.ActiveForm.Visible = false;
 		}
 
 		private void btnClientes_Click(object sender, EventArgs e)

@@ -32,6 +32,9 @@
 			this.lblTituloFuncionario = new System.Windows.Forms.Label();
 			this.btnCadastrarFuncionario = new System.Windows.Forms.Button();
 			this.gbxPreferenciasFuncionario = new System.Windows.Forms.GroupBox();
+			this.rbnEnsinoFundamental = new System.Windows.Forms.RadioButton();
+			this.rbnEnsinoMedio = new System.Windows.Forms.RadioButton();
+			this.rbnEnsinoSuperior = new System.Windows.Forms.RadioButton();
 			this.gbxEstadoCivilFuncionario = new System.Windows.Forms.GroupBox();
 			this.rbnCasadoFuncionario = new System.Windows.Forms.RadioButton();
 			this.rbnSolteiroFuncionario = new System.Windows.Forms.RadioButton();
@@ -47,9 +50,6 @@
 			this.lblCeularFuncionario = new System.Windows.Forms.Label();
 			this.lblTelefoneFuncionario = new System.Windows.Forms.Label();
 			this.lblNomeFuncionario = new System.Windows.Forms.Label();
-			this.rbnEnsinoSuperior = new System.Windows.Forms.RadioButton();
-			this.rbnEnsinoMedio = new System.Windows.Forms.RadioButton();
-			this.rbnEnsinoFundamental = new System.Windows.Forms.RadioButton();
 			this.lblSalario = new System.Windows.Forms.Label();
 			this.txtSalario = new System.Windows.Forms.TextBox();
 			this.gbxPreferenciasFuncionario.SuspendLayout();
@@ -73,6 +73,7 @@
 			this.btnCadastrarFuncionario.TabIndex = 30;
 			this.btnCadastrarFuncionario.Text = "CADASTRAR";
 			this.btnCadastrarFuncionario.UseVisualStyleBackColor = true;
+			this.btnCadastrarFuncionario.Click += new System.EventHandler(this.btnCadastrarFuncionario_Click);
 			// 
 			// gbxPreferenciasFuncionario
 			// 
@@ -85,6 +86,39 @@
 			this.gbxPreferenciasFuncionario.TabIndex = 29;
 			this.gbxPreferenciasFuncionario.TabStop = false;
 			this.gbxPreferenciasFuncionario.Text = "Preferências";
+			// 
+			// rbnEnsinoFundamental
+			// 
+			this.rbnEnsinoFundamental.AutoSize = true;
+			this.rbnEnsinoFundamental.Location = new System.Drawing.Point(15, 65);
+			this.rbnEnsinoFundamental.Name = "rbnEnsinoFundamental";
+			this.rbnEnsinoFundamental.Size = new System.Drawing.Size(121, 17);
+			this.rbnEnsinoFundamental.TabIndex = 2;
+			this.rbnEnsinoFundamental.TabStop = true;
+			this.rbnEnsinoFundamental.Text = "Ensino Fundamental";
+			this.rbnEnsinoFundamental.UseVisualStyleBackColor = true;
+			// 
+			// rbnEnsinoMedio
+			// 
+			this.rbnEnsinoMedio.AutoSize = true;
+			this.rbnEnsinoMedio.Location = new System.Drawing.Point(15, 42);
+			this.rbnEnsinoMedio.Name = "rbnEnsinoMedio";
+			this.rbnEnsinoMedio.Size = new System.Drawing.Size(89, 17);
+			this.rbnEnsinoMedio.TabIndex = 1;
+			this.rbnEnsinoMedio.TabStop = true;
+			this.rbnEnsinoMedio.Text = "Ensino Médio";
+			this.rbnEnsinoMedio.UseVisualStyleBackColor = true;
+			// 
+			// rbnEnsinoSuperior
+			// 
+			this.rbnEnsinoSuperior.AutoSize = true;
+			this.rbnEnsinoSuperior.Location = new System.Drawing.Point(15, 19);
+			this.rbnEnsinoSuperior.Name = "rbnEnsinoSuperior";
+			this.rbnEnsinoSuperior.Size = new System.Drawing.Size(99, 17);
+			this.rbnEnsinoSuperior.TabIndex = 0;
+			this.rbnEnsinoSuperior.TabStop = true;
+			this.rbnEnsinoSuperior.Text = "Ensino Superior";
+			this.rbnEnsinoSuperior.UseVisualStyleBackColor = true;
 			// 
 			// gbxEstadoCivilFuncionario
 			// 
@@ -216,39 +250,6 @@
 			this.lblNomeFuncionario.Size = new System.Drawing.Size(38, 13);
 			this.lblNomeFuncionario.TabIndex = 16;
 			this.lblNomeFuncionario.Text = "Nome:";
-			// 
-			// rbnEnsinoSuperior
-			// 
-			this.rbnEnsinoSuperior.AutoSize = true;
-			this.rbnEnsinoSuperior.Location = new System.Drawing.Point(15, 19);
-			this.rbnEnsinoSuperior.Name = "rbnEnsinoSuperior";
-			this.rbnEnsinoSuperior.Size = new System.Drawing.Size(99, 17);
-			this.rbnEnsinoSuperior.TabIndex = 0;
-			this.rbnEnsinoSuperior.TabStop = true;
-			this.rbnEnsinoSuperior.Text = "Ensino Superior";
-			this.rbnEnsinoSuperior.UseVisualStyleBackColor = true;
-			// 
-			// rbnEnsinoMedio
-			// 
-			this.rbnEnsinoMedio.AutoSize = true;
-			this.rbnEnsinoMedio.Location = new System.Drawing.Point(15, 42);
-			this.rbnEnsinoMedio.Name = "rbnEnsinoMedio";
-			this.rbnEnsinoMedio.Size = new System.Drawing.Size(89, 17);
-			this.rbnEnsinoMedio.TabIndex = 1;
-			this.rbnEnsinoMedio.TabStop = true;
-			this.rbnEnsinoMedio.Text = "Ensino Médio";
-			this.rbnEnsinoMedio.UseVisualStyleBackColor = true;
-			// 
-			// rbnEnsinoFundamental
-			// 
-			this.rbnEnsinoFundamental.AutoSize = true;
-			this.rbnEnsinoFundamental.Location = new System.Drawing.Point(15, 65);
-			this.rbnEnsinoFundamental.Name = "rbnEnsinoFundamental";
-			this.rbnEnsinoFundamental.Size = new System.Drawing.Size(121, 17);
-			this.rbnEnsinoFundamental.TabIndex = 2;
-			this.rbnEnsinoFundamental.TabStop = true;
-			this.rbnEnsinoFundamental.Text = "Ensino Fundamental";
-			this.rbnEnsinoFundamental.UseVisualStyleBackColor = true;
 			// 
 			// lblSalario
 			// 

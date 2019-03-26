@@ -16,5 +16,10 @@ namespace sistema
 		{
 			InitializeComponent();
 		}
+
+		private void btnCadastrarFuncionario_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

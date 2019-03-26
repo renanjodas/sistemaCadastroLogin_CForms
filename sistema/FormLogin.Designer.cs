@@ -32,7 +32,7 @@
 			this.lblUsuario = new System.Windows.Forms.Label();
 			this.lblSenha = new System.Windows.Forms.Label();
 			this.txtUsuario = new System.Windows.Forms.TextBox();
-			this.txtenha = new System.Windows.Forms.TextBox();
+			this.txtSenha = new System.Windows.Forms.TextBox();
 			this.pnlAreaAcesso = new System.Windows.Forms.Panel();
 			this.btnEntrar = new System.Windows.Forms.Button();
 			this.pnlAreaAcesso.SuspendLayout();
@@ -63,18 +63,18 @@
 			this.txtUsuario.Size = new System.Drawing.Size(100, 20);
 			this.txtUsuario.TabIndex = 2;
 			// 
-			// txtenha
+			// txtSenha
 			// 
-			this.txtenha.Location = new System.Drawing.Point(84, 88);
-			this.txtenha.Name = "txtenha";
-			this.txtenha.Size = new System.Drawing.Size(100, 20);
-			this.txtenha.TabIndex = 3;
+			this.txtSenha.Location = new System.Drawing.Point(84, 88);
+			this.txtSenha.Name = "txtSenha";
+			this.txtSenha.Size = new System.Drawing.Size(100, 20);
+			this.txtSenha.TabIndex = 3;
 			// 
 			// pnlAreaAcesso
 			// 
 			this.pnlAreaAcesso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.pnlAreaAcesso.Controls.Add(this.btnEntrar);
-			this.pnlAreaAcesso.Controls.Add(this.txtenha);
+			this.pnlAreaAcesso.Controls.Add(this.txtSenha);
 			this.pnlAreaAcesso.Controls.Add(this.lblSenha);
 			this.pnlAreaAcesso.Controls.Add(this.txtUsuario);
 			this.pnlAreaAcesso.Controls.Add(this.lblUsuario);
@@ -94,6 +94,7 @@
 			this.btnEntrar.Text = "ENTRAR";
 			this.btnEntrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnEntrar.UseVisualStyleBackColor = true;
+			this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
 			// 
 			// FormLogin
 			// 
@@ -118,7 +119,7 @@
 		private System.Windows.Forms.Label lblUsuario;
 		private System.Windows.Forms.Label lblSenha;
 		private System.Windows.Forms.TextBox txtUsuario;
-		private System.Windows.Forms.TextBox txtenha;
+		private System.Windows.Forms.TextBox txtSenha;
 		private System.Windows.Forms.Button btnEntrar;
 		private System.Windows.Forms.Panel pnlAreaAcesso;
 	}

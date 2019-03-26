@@ -16,5 +16,26 @@ namespace sistema
 		{
 			InitializeComponent();
 		}
+
+		private void btnEntrar_Click(object sender, EventArgs e)
+		{
+			Login login = new Login();
+			login.setSenha(txtSenha.Text);
+			login.setUsuario(txtUsuario.Text);
+
+			if (login.verificarLogin())
+			{
+				formMenu telaMenu = new formMenu();
+				telaMenu.ShowDialog();
+				sistema.FormLogin.ActiveForm.Visible = false;
+
+			}
+			else
+			{
+				MessageBox.Show("Login incorreto. Por favor, tente novamente", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				txtUsuario.Text = "";
+				txtSenha.Text = "";
+			}
+		}
 	}
 }
