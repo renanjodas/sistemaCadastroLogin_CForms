@@ -1,0 +1,51 @@
+
+------------- Cadastro de Produto -------------
+
+                                     27/03/2019
+
+Código: 1
+
+Produto: Cerveja
+
+Qtde: 30
+
+Setor: Bebidas
+
+Fornecedor: Skol
+
+
+Custo Unitário; 1,59
+
+% Revenda: 30
+
+Valor Revenda: 2,067
+
+Valor Total: 62,01
+
+Lucro/unidade: 0,477
+
+Lucro Total: 14,31
+
+________________________________________________
+
+
+------------- Cadastro de Produto -------------
+
+                      data de entrada26/03/2019
+
+Código: 2
+Produto: Leite Condensado
+Qtde: 25
+Setor: Doces
+Fornecedor: Moça
+
+
+Custo Unitário; 3,59
+% Revenda: 30%
+Valor Revenda: 4,667
+Valor Total: 116,675
+Lucro/unidade: 1,077
+Lucro Total: 26,925
+
+________________________________________________
+

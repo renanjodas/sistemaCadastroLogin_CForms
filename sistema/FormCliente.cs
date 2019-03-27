@@ -59,12 +59,13 @@ namespace sistema
 			{
 				estadoCivil = "Casado";
 
-			} else if(rbnSolteiroCliente.Checked == true)
+			} else 
 			{
 				estadoCivil = "Solteiro";
 			}
 
 			GravarCliente(txtNomeCliente.Text, txtEmailCliente.Text, maskTelefoneCliente.Text, maskCelularCliente.Text, comboCidadeCliente.Items[comboCidadeCliente.SelectedIndex].ToString(), comboEstadoCliente.Items[comboEstadoCliente.SelectedIndex].ToString(), estadoCivil, vegetariano, vegano, lactose, diabetico);
+			LimparCliente();
 
 			MessageBox.Show("Cliente gravado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
@@ -98,6 +99,22 @@ namespace sistema
 			arquivo.WriteLine("________________________________________________");
 			arquivo.WriteLine("");
 			arquivo.Close();
+		}
+
+		private void LimparCliente()
+		{
+			txtNomeCliente.Clear();
+			txtEmailCliente.Clear();
+			maskTelefoneCliente.Clear();
+			maskCelularCliente.Clear();
+			comboCidadeCliente.ResetText();
+			comboEstadoCliente.ResetText();
+			rbnCasadoCliente.Checked = false;
+			rbnSolteiroCliente.Checked = false;
+			cbxDiabetico.Checked = false;
+			cbxIntolerante.Checked = false;
+			cbxVegano.Checked = false;
+			cbxVegetariano.Checked = false;
 		}
 	}
 }

@@ -1,0 +1,22 @@
+
+------------- Cadastro de Cliente -------------
+
+Nome: Renan Dias Jodas
+
+E-mail: renanjodas@gmail.com
+
+Telefone: (19) 3873-3563
+
+Celular: (19) 99698-5018
+
+Cidade: Americana/SP
+
+Estado Civil: Solteiro
+
+Vegetariano? Sim
+Vegano? Não
+Intolerante a lactose? Não
+Diabético? Não
+
+________________________________________________
+
